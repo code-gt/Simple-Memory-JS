@@ -1,47 +1,49 @@
-### Consignes pour le développement du jeu de Memory
+# TP : Création d'un jeu de memory
 
-#### HTML :
+## Objectif
 
-1. **Création de la structure de base** :
-   - Définissez un document HTML valide.
-   - Utilisez la balise `<!DOCTYPE html>` pour indiquer la version HTML.
-   - Créez une structure de base avec les balises `<html>`, `<head>` et `<body>`.
-   - Ajoutez une section `<div>` pour contenir le jeu de memory.
+L'objectif de ce TP est de développer un jeu de memory simple en utilisant HTML, CSS et JavaScript. Le jeu consistera à retourner des cartes deux par deux pour trouver des paires correspondantes. L'utilisateur gagne lorsque toutes les paires ont été trouvées.
 
-#### CSS :
+## Technologies utilisées
 
-2. **Stylisation de base** :
-   - Utilisez le CSS pour styliser votre jeu de memory.
-   - Choisissez une couleur de fond et une police de caractères adaptées.
-   - Créez des classes pour styliser les cartes, le texte et les messages.
-   - Utilisez des propriétés comme `background-color`, `font-family`, `font-size`, etc.
-   - Assurez-vous que le jeu est adaptatif et agréable visuellement.
+- **HTML** : pour structurer le contenu du jeu.
+- **CSS** : pour styliser le jeu et rendre l'interface agréable.
+- **JavaScript** : pour ajouter l'interactivité nécessaire au jeu (retourner les cartes, vérifier les correspondances, suivre le progrès).
 
-#### JavaScript :
+## Consignes
 
-3. **Gestion des cartes** :
-   - Créez un tableau avec les valeurs des cartes.
-   - Mélangez aléatoirement ce tableau pour chaque nouvelle partie.
-   - Créez une fonction pour créer les éléments des cartes dans le HTML.
-   - Ajoutez des classes CSS pour styliser les cartes et leur état.
+### Partie HTML
 
-4. **Logique du jeu** :
-   - Implémentez la logique du jeu :
-     - Permettez le retournement des cartes.
-     - Vérifiez si les cartes retournées correspondent.
-     - Gérez les paires assorties et les cartes incorrectes.
-     - Comptez le nombre de paires assorties.
-     - Affichez un message de succès lorsque toutes les paires sont trouvées.
+1. **Structure de base** : Créez une structure HTML simple avec un titre pour le jeu, un conteneur pour le plateau de jeu et des éléments pour afficher le nombre de paires trouvées et les messages de succès.
 
-5. **Interface utilisateur** :
-   - Affichez le nombre de paires assorties.
-   - Cachez les cartes incorrectes après un court délai.
-   - Affichez un message de félicitations lorsque toutes les paires sont trouvées.
+### Partie CSS
 
-#### Commentaires :
+1. **Stylisation** : Utilisez le CSS pour styliser votre jeu. Ajoutez des couleurs, des espacements et des transitions pour rendre le jeu plus attrayant. Utilisez `[class^="nom"]` pour styliser des éléments spécifiques.
 
-6. **Ajoutez des commentaires explicatifs** :
-   - Commentez chaque partie du code pour expliquer son fonctionnement.
-   - Expliquez la logique derrière chaque fonction et chaque étape.
-   - Utilisez des commentaires clairs et concis pour faciliter la compréhension.
-   - Encouragez les élèves à ajouter leurs propres commentaires pour renforcer leur compréhension.
+### Partie JavaScript
+
+1. **Création des cartes** :
+   - Créez un tableau contenant des paires de caractères ou d'images qui seront les faces des cartes.
+   - Mélangez aléatoirement ce tableau pour que l'ordre des cartes soit aléatoire à chaque partie.
+  
+     javascript
+// Exemple de mélange des cartes
+cards.sort(() => Math.random() - 0.5);
+
+2. **Affichage des cartes** :
+   - Utilisez une boucle `for` ou `for...of` pour créer un élément HTML pour chaque carte.
+   - Ajoutez un écouteur d'événements sur chaque carte pour gérer le clic.
+
+3. **Logique de retournement des cartes** :
+   - Gérez le retournement des cartes en ajoutant/enlevant une classe CSS lorsque l'utilisateur clique sur une carte.
+
+4. **Vérification des correspondances** :
+   - Après avoir retourné deux cartes, vérifiez si elles correspondent. Si c'est le cas, marquez-les comme réussies. Sinon, retournez-les face cachée après un court délai.
+
+5. **Fin de jeu** :
+   - Indiquez à l'utilisateur qu'il a gagné une fois que toutes les paires ont été trouvées.
+
+**Pistes et conseils** :
+- Pour faciliter le développement, travaillez étape par étape. Commencez par la structure HTML, puis passez au CSS et enfin au JavaScript.
+- Testez régulièrement votre jeu pour vous assurer que chaque fonctionnalité fonctionne comme prévu.
+- Utilisez les commentaires dans le code pour expliquer la logique, surtout dans les parties complexes.
