@@ -36,7 +36,8 @@ cards.sort(() => Math.random() - 0.5);
    - Un tableau _flippedCards_ pour stocker temporairement les cartes retournées par l'utilisateur. Cela permet de comparer si les deux cartes sélectionnées correspondent.
    - Un tableau _matchedCards_ pour stocker les cartes correspondantes. Une fois que deux cartes correspondent, elles sont ajoutées à ce tableau.
    - Un compteur pour suivre le nombre de mouvements effectués par l'utilisateur.
-   - 
+
+     
 3. **Création des fonctions** :
    - Une fonction pour créer les éléments des cartes _card_ utilisant des méthodes déjà connues (_createElement_, _textContent_, _appendChild_, ajout de class). Ajouter un écouteur d'événements pour gérer le clic sur la carte : lorsque la carte est cliquée, la fonction flipCard est appelée avec la carte en paramètre
    
@@ -82,7 +83,7 @@ function checkMatch() {
 ```
 
 4. **Affichage des cartes** :
-   - Utilisez une boucle `forEach` ou `for...of` pour créer les cartes.
+   - Utilisez une boucle `forEach` pour créer les cartes.
 
 5. **Fin de jeu** :
    - Indiquez à l'utilisateur qu'il a gagné une fois que toutes les paires ont été trouvées.
