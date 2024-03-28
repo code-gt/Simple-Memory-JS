@@ -42,12 +42,14 @@ cards.sort(() => Math.random() - 0.5);
    - Une fonction pour créer les éléments des cartes _card_ utilisant des méthodes déjà connues (_createElement_, _textContent_, _appendChild_, ajout de class). Ajouter un écouteur d'événements pour gérer le clic sur la carte : lorsque la carte est cliquée, la fonction flipCard est appelée avec la carte en paramètre
    
    ```js
+   // Fonction pour créer les éléments des cartes
    function createCard(value, index) {
    }
    ```
 
    - Une fonction pour retourner une carte. Gérez le retournement des cartes en ajoutant/enlevant une classe CSS lorsque l'utilisateur clique sur une carte.
    ```js
+   // Fonction pour retourner une carte
    function flipCard(card) {
    }
    ```
