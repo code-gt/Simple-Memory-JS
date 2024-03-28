@@ -51,7 +51,7 @@ cards.sort(() => Math.random() - 0.5);
    }
    ```
 
-     - Une fonction pour retourner une carte. Gérez le retournement des cartes en ajoutant/enlevant une classe CSS lorsque l'utilisateur clique sur une carte.
+   - Une fonction pour retourner une carte. Gérez le retournement des cartes en ajoutant/enlevant une classe CSS lorsque l'utilisateur clique sur une carte.
 ```js
 function flipCard(card) {
   // Vérifier si la carte n'est pas déjà retournée et n'est pas déjà assortie
@@ -63,7 +63,7 @@ function flipCard(card) {
 }
 ```
 
-     - Une fonction pour vérifier si les cartes retournées correspondent. Après avoir retourné deux cartes, vérifiez si elles correspondent. Si c'est le cas, marquez-les comme réussies. Sinon, retournez-les face cachée après un court délai.
+   - Une fonction pour vérifier si les cartes retournées correspondent. Après avoir retourné deux cartes, vérifiez si elles correspondent. Si c'est le cas, marquez-les comme réussies. Sinon, retournez-les face cachée après un court délai.
      
 ```js
 // Fonction pour vérifier si les cartes retournées correspondent
