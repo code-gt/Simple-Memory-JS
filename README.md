@@ -26,9 +26,10 @@ L'objectif de ce TP est de développer un jeu de memory simple en utilisant HTML
    - Créez un tableau contenant des paires de caractères ou d'images qui seront les faces des cartes.
    - Mélangez aléatoirement ce tableau pour que l'ordre des cartes soit aléatoire à chaque partie.
   
-     javascript
+```javascript
 // Exemple de mélange des cartes
 cards.sort(() => Math.random() - 0.5);
+```
 
 2. **Affichage des cartes** :
    - Utilisez une boucle `for` ou `for...of` pour créer un élément HTML pour chaque carte.
