@@ -71,7 +71,7 @@ cards.sort(() => Math.random() - 0.5);
    - Indiquez à l'utilisateur qu'il a gagné une fois que toutes les paires ont été trouvées.
 
 6. **Bonus** :
-   - Utiliser un effet de retournement sur vos cartes en CSS. [Voir ici](https://fr.w3docs.com/snippets/css/comment-creer-une-animation-de-retournement-3d-sur-une-boite-carte-aveccss.html#animation-de-retournement-horizontal-et-vertical){:target="_blank"} 
+   - Utiliser un effet de retournement sur vos cartes en CSS. [Voir ici](https://fr.w3docs.com/snippets/css/comment-creer-une-animation-de-retournement-3d-sur-une-boite-carte-aveccss.html#animation-de-retournement-horizontal-et-vertical)
 
 **Pistes et conseils** :
 - Pour faciliter le développement, travaillez étape par étape. Commencez par la structure HTML, puis passez au CSS et enfin au JavaScript.
