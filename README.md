@@ -38,20 +38,20 @@ cards.sort(() => Math.random() - 0.5);
    - Un compteur pour suivre le nombre de mouvements effectués par l'utilisateur.
    - 
 3. **Création des fonctions** :
-   - Une fonction pour créer les éléments des cartes _card_ utilisant des méthodes déjà connues (_createElement_, _textContent_, _appendChild_, 
+   - Une fonction pour créer les éléments des cartes _card_ utilisant des méthodes déjà connues (_createElement_, _textContent_, _appendChild_, ajout de class). Ajouter un écouteur d'événements pour gérer le clic sur la carte : lorsque la carte est cliquée, la fonction flipCard est appelée avec la carte en paramètre
    
    ```js
    function createCard(value, index) {
        // Créer un nouvel élément div pour représenter la carte
        // Ajouter une class pour le style
-       // Définitir l'attribut de données 'index' pour garder une trace de l'index de la carte
-       // Définitir le texte de la carte comme la valeur passée en paramètre
+       // Définir l'attribut de données 'index' pour garder une trace de l'index de la carte
+       // Définir le texte de la carte comme la valeur passée en paramètre
        // Ajouter un écouteur d'événements pour gérer le clic sur la carte : lorsque la carte est cliquée, la fonction flipCard est appelée avec la carte en paramètre
        // Ajouter la carte en tant qu'enfant du conteneur de jeu
    }
    ```
 
-     - Une fonction pour retourner une carte utilisant des méthodes déjà connues (_createElement_, _textContent_, _appendChild_, ajout de class). Gérez le retournement des cartes en ajoutant/enlevant une classe CSS lorsque l'utilisateur clique sur une carte.
+     - Une fonction pour retourner une carte. Gérez le retournement des cartes en ajoutant/enlevant une classe CSS lorsque l'utilisateur clique sur une carte.
 ```js
 function flipCard(card) {
   // Vérifier si la carte n'est pas déjà retournée et n'est pas déjà assortie
@@ -63,21 +63,21 @@ function flipCard(card) {
 }
 ```
 
-   - Une fonction pour vérifier si les cartes retournées correspondent. Après avoir retourné deux cartes, vérifiez si elles correspondent. Si c'est le cas, marquez-les comme réussies. Sinon, retournez-les face cachée après un court délai.
+     - Une fonction pour vérifier si les cartes retournées correspondent. Après avoir retourné deux cartes, vérifiez si elles correspondent. Si c'est le cas, marquez-les comme réussies. Sinon, retournez-les face cachée après un court délai.
+     
 ```js
 // Fonction pour vérifier si les cartes retournées correspondent
 function checkMatch() {
   // Destructuration pour obtenir les deux cartes retournées
   // Récupérer le texte des cartes
-  // Vérifier si les valeurs des cartes correspondent
-    // Si les valeurs correspondent, ajouter les cartes assorties à la liste des cartes assorties _matchesCards_
+
+  // Vérifier si les valeurs des cartes correspondent et ajouter si besoin les cartes assorties à la liste des cartes assorties _matchesCards_
     // Ajouter une class 'success' pour indiquer que les cartes sont assorties
     // Incrémenter le compteur de paires assorties et mettre à jour le contenu du compteur de paires assorties
     // Afficher le message de succès et le masquer le message de succès après 2 secondes
+
     // Vérifier si toutes les cartes ont été assorties pour afficher si besoin une alerte de félicitations
-      // Si toutes les cartes ont été assorties, affiche une alerte de félicitations
-      // Si les valeurs des cartes ne correspondent pas, masque les lettres en retirant la classe 'flipped'
-  // Réinitialise la liste des cartes retournées _flippedCards_
+    // Si les valeurs des cartes ne correspondent pas, masque les lettres en retirant la classe 'flipped' et réinitialiser la liste des cartes retournées _flippedCards_
 }
 ```
 
