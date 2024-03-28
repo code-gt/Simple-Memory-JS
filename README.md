@@ -26,7 +26,7 @@ L'objectif de ce TP est de développer un jeu de memory simple en utilisant HTML
    - Créez un tableau contenant des paires de caractères ("A", "B", "C", ...) qui seront les faces des cartes.
    - Mélangez aléatoirement ce tableau pour que l'ordre des cartes soit aléatoire à chaque partie.
   
-```javascript
+```js
 // Exemple de mélange des cartes
 cards.sort(() => Math.random() - 0.5);
 ```
@@ -47,18 +47,18 @@ cards.sort(() => Math.random() - 0.5);
    ```
 
    - Une fonction pour retourner une carte. Gérez le retournement des cartes en ajoutant/enlevant une classe CSS lorsque l'utilisateur clique sur une carte.
-```js
-function flipCard(card) {
-}
-```
+   ```js
+   function flipCard(card) {
+   }
+   ```
 
    - Une fonction pour vérifier si les cartes retournées correspondent. Après avoir retourné deux cartes, vérifiez si elles correspondent. Si c'est le cas, marquez-les comme réussies. Sinon, retournez-les face cachée après un court délai.
      
-```js
-// Fonction pour vérifier si les cartes retournées correspondent
-function checkMatch() {
-}
-```
+   ```js
+   // Fonction pour vérifier si les cartes retournées correspondent
+   function checkMatch() {
+   }
+   ```
 
 4. **Affichage des cartes** :
    - Utilisez une boucle `forEach` pour créer les cartes.
