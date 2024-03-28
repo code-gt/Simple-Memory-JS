@@ -43,24 +43,12 @@ cards.sort(() => Math.random() - 0.5);
    
    ```js
    function createCard(value, index) {
-       // Créer un nouvel élément div pour représenter la carte
-       // Ajouter une class pour le style
-       // Définir l'attribut de données 'index' pour garder une trace de l'index de la carte
-       // Définir le texte de la carte comme la valeur passée en paramètre
-       // Ajouter un écouteur d'événements pour gérer le clic sur la carte : lorsque la carte est cliquée, la fonction flipCard est appelée avec la carte en paramètre
-       // Ajouter la carte en tant qu'enfant du conteneur de jeu
    }
    ```
 
    - Une fonction pour retourner une carte. Gérez le retournement des cartes en ajoutant/enlevant une classe CSS lorsque l'utilisateur clique sur une carte.
 ```js
 function flipCard(card) {
-  // Vérifier si la carte n'est pas déjà retournée et n'est pas déjà assortie
-  if (!flippedCards.includes(card) && !matchedCards.includes(card)) {
-    // Ajouter une class
-    // Ajouter la carte à la liste des cartes retournées _flippedCards_ gràce à push()
-    // Vérifier s'il y a deux cartes retournées
-  }
 }
 ```
 
@@ -69,16 +57,6 @@ function flipCard(card) {
 ```js
 // Fonction pour vérifier si les cartes retournées correspondent
 function checkMatch() {
-  // Destructuration pour obtenir les deux cartes retournées
-  // Récupérer le texte des cartes
-
-  // Vérifier si les valeurs des cartes correspondent et ajouter si besoin les cartes assorties à la liste des cartes assorties _matchesCards_
-    // Ajouter une class 'success' pour indiquer que les cartes sont assorties
-    // Incrémenter le compteur de paires assorties et mettre à jour le contenu du compteur de paires assorties
-    // Afficher le message de succès et le masquer le message de succès après 2 secondes
-
-    // Vérifier si toutes les cartes ont été assorties pour afficher si besoin une alerte de félicitations
-    // Si les valeurs des cartes ne correspondent pas, masque les lettres en retirant la classe 'flipped' et réinitialiser la liste des cartes retournées _flippedCards_
 }
 ```
 
