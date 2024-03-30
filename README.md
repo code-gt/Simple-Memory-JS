@@ -16,7 +16,7 @@ L'objectif de ce TP est de développer un jeu de memory simple en utilisant HTML
 
 ### Partie HTML
 
-1. **Structure de base** : Créez une structure HTML simple avec un titre pour le jeu, un conteneur pour le plateau de jeu et des éléments pour afficher le nombre de paires trouvées et les messages de succès.
+1. **Structure de base** : Créez une structure HTML simple avec un titre pour le jeu, un conteneur flex pour le plateau de jeu et des éléments pour afficher le nombre de paires trouvées et les messages de succès.
 
 ### Partie CSS
 
