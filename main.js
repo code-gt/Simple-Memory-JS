@@ -1,4 +1,4 @@
-    /* VARIABLES */
+/* VARIABLES */
 
   // Création du tableau contenant les cartes (10 paires)
   
