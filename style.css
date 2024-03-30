@@ -8,17 +8,16 @@ body {
 }
 
 /* CONTENEUR */
-/* Il s'agit d'une flexbox de 440px de large et centrée dans la page HTML */
+  .game-container {
+
+  }
 
 
 /* CARD */
 /* 
-La carte est un carré de 100 x 100.
-
-Vous pouvez utiliser ce lien comme image de fond : https://jaimelallemand.fr/img/memory/quizy-mg-item-topxs.jpg.png
-Pensez à background-size et background-position si besoin
-
-Ajouter une flexbox pour centrer les lettres, une couleur de fond transparente et une transition CSS pour la background-color (par ex. transition: background-color 0.3s ease;)
+Vous pouvez utiliser ce lien comme image de fond : 
+https://jaimelallemand.fr/img/memory/quizy-mg-item-topxs.jpg.png
+Ou choisir votre image personnalisée !
 */
 
 .card {
@@ -36,13 +35,13 @@ Ajouter une flexbox pour centrer les lettres, une couleur de fond transparente e
 
 }
 
-/* Zone du message de succès (440px de large) */
-/* Cette zone est à cachée en CSS et à montrer en JS */
+/* Zone du message de succès */
+/* Cette zone est à cacher en CSS et à montrer en JS */
 #successText {
 
 }
 
-/* Zone du compteur (440px de large) */
+/* Zone du compteur */
 #matchesCount {
 
 }
