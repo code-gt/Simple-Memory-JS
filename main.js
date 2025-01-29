@@ -22,7 +22,7 @@ function createCard(value, index) {
     // Ajout de la class 'card'
 
     // Définition de l'attribut de données 'index' pour garder une trace de l'index de la carte
-    card.dataset.index = index;
+
     // Définition du texte de la carte comme la valeur passée en paramètre
   
     // Lorsque la carte est cliquée, la fonction flipCard est appelée avec la carte en paramètre
@@ -46,7 +46,6 @@ function flipCard(card) {
 // Fonction pour vérifier si les cartes retournées correspondent
 function checkMatch() {
   // Destructuration pour obtenir les deux cartes retournées
-  const [card1, card2] = flippedCards;
 
   // Récupère les textes des cartes
 
