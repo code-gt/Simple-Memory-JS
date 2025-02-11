@@ -3,12 +3,13 @@
   // Création du tableau contenant les cartes (10 paires)
   
   // Mélanger aléatoirement un tableau
+  cards.sort(() => Math.random() - 0.5);
   
-  // Variables du plateau de jeu, des zones de messages et du compteur
+  // Variables de récupération du plateau de jeu, des zones de messages et du compteur
   
-  // Variable pour suivre les cartes retournées
+  // Variable `flippedCards` type tableau vide pour suivre les cartes retournées
 
-  // Variable pour suivre les cartes assorties
+  // Variable `matchedCards` type tableau vide pour suivre les cartes assorties
 
   // Variable pour suivre le nombre de paires
 
